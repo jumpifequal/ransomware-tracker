@@ -1,7 +1,7 @@
 """
 Purpose: query and aggregate the bundled historical ransomware knowledge base using a canonical schema.
 When used: in TREND mode for time-series, country/sector/group comparisons, financial summaries, EuRepoC views, and repository history; optionally in TRACKER mode for older entity lookups.
-Why it exists: converts heterogeneous JSON/CSV datasets into reproducible analytics without relying on legacy Actions.
+Why it exists: converts heterogeneous JSON/CSV datasets into reproducible analytics using locally bundled historical data.
 Inputs/parameters: subcommand plus optional date, country, group, sector, victim, keyword, and grouping filters.
 Outputs: JSON containing normalized matching records or grouped summaries with dataset provenance.
 High-level behavior: loads only the required local dataset, normalizes fields, filters case-insensitively, deduplicates claim-like records, and aggregates by requested dimension.

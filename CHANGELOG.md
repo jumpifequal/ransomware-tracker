@@ -1,9 +1,8 @@
 # Changelog
 
-**Repository packaging - skill version unchanged (v7)**
+**v8 - Standalone skill release**
 
-- add: GitHub repository wrapper — short README in English and Italian, with worked examples and advanced use on separate documentation pages, a pipeline diagram, an illustrative dashboard, two workflow infographics (English and Italian), suggested prompts with verified expected results, and credits for the historical data; Apache-2.0 LICENSE, CONTRIBUTING, SECURITY, documentation, CI workflow and a repository validator.
-- change: none to the skill — SKILL.md, agents, assets, references, scripts and tests are byte-identical to the v7 package.
+- change: release packaging — published the standalone skill as v8 with the previously finalized CustomGPT conversion cleanup; threat-intelligence workflows remain unchanged.
 
 **v7 - Cross-threat intelligence and correlation**
 
@@ -30,7 +29,7 @@
 - add: historical intelligence — integrated local historical datasets for claims/victims, ransomware wallets, EuRepoC incidents, and the historical repository, combinable with live sources when the requested period requires it.
 - add: trend analysis — added aggregations and comparisons by month, quarter, year, group, country, and sector, with explicit units of measure and preserved provenance.
 - add: sector enrichment — when sector data is missing but required, the skill can retrieve it from the web using identity disambiguation, verifiable public sources, and enrichment provenance.
-- change: unified runtime — Tracker and Trend now share the same maximum-effort live engine, fallback/replacement logic, and scripts.
+- change: unified runtime — Tracker and Trend now share the same maximum-effort live engine, fallback/replacement logic, and scripts replacing legacy Actions.
 - change: evidence semantics — claims, confirmed incidents, OSINT articles, EuRepoC records, wallets, and aggregate statistics remain distinct to avoid semantically incorrect counts or conclusions.
 
 **v4-universal - Source resilience and functional fallbacks**

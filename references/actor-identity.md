@@ -54,7 +54,7 @@ A DDoS/hacktivist actor and a ransomware/extortion operation may share a very si
 
 `same-looking normalized name + distinct verified entities/families -> ENTITY_COLLISION -> DO NOT MERGE`
 
-The previously discussed NoName case is an example of this pattern, not a special-case rule.
+The NoName homonym case below illustrates this pattern; it is not a special-case rule.
 
 ### Example pattern B: verified multi-vendor aliases
 
@@ -62,7 +62,7 @@ One actor may be named differently by different vendors. When current high-quali
 
 `different labels + verified alias evidence -> VERIFIED_ALIAS_SET -> merge canonical identity while preserving source labels`
 
-The previously discussed Luna Moth / Silent Ransom Group / Chatty Spider naming case is an example of this pattern, not a built-in mapping.
+The Luna Moth / Silent Ransom Group / Chatty Spider naming case below illustrates this pattern; it is not a built-in mapping.
 
 ## Cross-source behavior
 

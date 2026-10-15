@@ -119,7 +119,6 @@ More prompts, for example for DDoS, breaches and correlation: [docs/prompts-and-
 - **[Advanced use](docs/advanced-use.md).** Force a mode or a source, query the history offline, handle blocked sources, test the coverage gate, build the status table, actors and sectors.
 - **[Prompts and command catalogue](docs/prompts-and-commands.md).** More prompts and the options of every helper script.
 
-
 ## What you get back
 
 For a matching victim, the skill returns a table with **Vendor Name**, **Ransomware Group**, **Date Published** and **Link**. It uses only verified fields and writes `N/A` when a field is not known. It separates two outcomes:
@@ -137,17 +136,17 @@ For a trend request, the skill can also build a dashboard. This picture shows th
 
 The skill ships 33 Python helpers that use only the Python standard library. Purpose and use of each one: [docs/runtime-tools.md](docs/runtime-tools.md).
 
-| Group | Scripts in `scripts/` |
-|---|---|
-| **Live sources (ransomware claims, groups, statistics)** | `ransomware_live.py`, `ransomlook.py`, `ransomfeed.py`, `ransomfeed_web.py`, `ransomnews.py`, `vulone.py`, `threatvectr.py` |
-| **OSINT news sources** | `bleepingcomputer.py`, `cybernews.py`, `security_affairs.py` |
-| **Data-breach sources** | `breach_sources.py` |
-| **DDoS (DDoSia Monitor)** | `ddosia.py`, `ddosia_search_fallback.py` |
-| **Records, history and correlation** | `normalize_records.py`, `filter_records.py`, `historical_query.py`, `actor_identity.py`, `sector_enrichment.py`, `cross_correlation.py` |
-| **Routing, coverage and fallback** | `intent_router.py`, `coverage_gate.py`, `fallback_policy.py`, `replacement_policy.py`, `source_status.py`, `request_manifest.py`, `search_index_fallback.py` |
-| **Diagnostics** | `diagnose_source.py`, `network_diagnostics.py` |
-| **Shared building blocks** | `_cli_common.py`, `_http_common.py`, `_source_runner.py`, `contracts.py` |
-| **Package checks** | `regression.py` |
+| Group                                                    | Scripts in `scripts/`                                                                                                                                        |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Live sources (ransomware claims, groups, statistics)** | `ransomware_live.py`, `ransomlook.py`, `ransomfeed.py`, `ransomfeed_web.py`, `ransomnews.py`, `vulone.py`, `threatvectr.py`                                  |
+| **OSINT news sources**                                   | `bleepingcomputer.py`, `cybernews.py`, `security_affairs.py`                                                                                                 |
+| **Data-breach sources**                                  | `breach_sources.py`                                                                                                                                          |
+| **DDoS (DDoSia Monitor)**                                | `ddosia.py`, `ddosia_search_fallback.py`                                                                                                                     |
+| **Records, history and correlation**                     | `normalize_records.py`, `filter_records.py`, `historical_query.py`, `actor_identity.py`, `sector_enrichment.py`, `cross_correlation.py`                      |
+| **Routing, coverage and fallback**                       | `intent_router.py`, `coverage_gate.py`, `fallback_policy.py`, `replacement_policy.py`, `source_status.py`, `request_manifest.py`, `search_index_fallback.py` |
+| **Diagnostics**                                          | `diagnose_source.py`, `network_diagnostics.py`                                                                                                               |
+| **Shared building blocks**                               | `_cli_common.py`, `_http_common.py`, `_source_runner.py`, `contracts.py`                                                                                     |
+| **Package checks**                                       | `regression.py`                                                                                                                                              |
 
 ## Repository layout
 
@@ -181,10 +180,6 @@ ransomware-tracker/
 - Respect rate limits and `Retry-After`.
 - Do not run code retrieved from external sites.
 - Local historical data is historical evidence with its own coverage limits. It is not automatically current.
-
-## Version and author
-
-Skill version: **v7**. Author: **Enrico Frumento**.
 
 ## Historical data and credits
 

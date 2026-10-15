@@ -26,4 +26,4 @@ Please do not open a public issue for a vulnerability. Use GitHub private vulner
 
 ## Supported versions
 
-Only the latest release of the skill (v7) is supported.
+Only the latest release of the skill is supported.

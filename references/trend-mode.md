@@ -24,7 +24,7 @@ Never treat the historical bundle as a substitute for fresh live collection when
 9. When live data extends the historical period, merge only records that can be normalized to the same semantic record type and deduplicate by victim/group/date plus provenance-aware rules.
 10. Report data-coverage boundaries when they materially affect interpretation.
 
-Do not invoke legacy GPT Actions or legacy OpenAPI Action schemas.
+Use only configured source adapters and host-native web transports.
 
 ## Missing sector during trend analysis
 

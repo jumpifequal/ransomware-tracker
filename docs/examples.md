@@ -30,14 +30,16 @@ Each example shows the request, what the skill does behind the scenes, the comma
    ```
 
 3. Records are normalized to one schema, filtered and de-duplicated (see Example 2).
+
 4. The coverage gate checks that every relevant source was attempted. If one was not, the run continues.
+
 5. The agent writes the answer.
 
 **Expected output (example):**
 
-| Vendor Name | Ransomware Group | Date Published | Link |
-|---|---|---|---|
-| *Example Corp* | *ExampleGroup* | *2026-09-03* | *https://example.invalid/record* |
+| Vendor Name    | Ransomware Group | Date Published | Link                             |
+| -------------- | ---------------- | -------------- | -------------------------------- |
+| *Example Corp* | *ExampleGroup*   | *2026-09-03*   | *https://example.invalid/record* |
 
 The answer ends with the source-status table (see the dashboard below). If no source matches, the skill says **No verified match found**. If a relevant source was blocked or unavailable, it says **Indeterminate / incomplete coverage** instead.
 
@@ -64,7 +66,7 @@ The answer ends with the source-status table (see the dashboard below). If no so
    python scripts/threatvectr.py month <YYYY> <M>              # aggregate sanity check only
    ```
 
-3. The agent adds a baseline from the bundled history. The bundled claims in v7 end in 2025, so the recent months must come from live sources.
+3. The agent adds a baseline from the bundled history. The bundled claims end in 2025, so the recent months must come from live sources.
 
    ```bash
    python scripts/historical_query.py claims --group-by year
@@ -83,6 +85,7 @@ The answer ends with the source-status table (see the dashboard below). If no so
    *Real output for a placeholder record (shortened):* `{"ok":true,"count":1,"records":[{"victim":"Example Corp","group":"examplegroup","date":"2026-09-03 10:00:00","date_semantics":"discovery_date","country":"IT","data_type":"ransomware-claim-record","provenance":["ransomware.live"], ...}],"filters":{...}}`
 
 5. The agent groups by month and country, keeps each tracker's counts apart when they differ, and names the unit it counts (claims, not confirmed attacks).
+
 6. The coverage gate and the status table close the run.
 
 **Expected output:** a short narrative, tables, and a chart or dashboard when your agent can draw one. The picture below shows the layout. **All numbers in it are synthetic.**
@@ -156,6 +159,7 @@ The other breach sources are `california`, `hhs` and `sec`. The ransomware ↔ d
 **What happens**
 
 1. The router picks Trend mode.
+
 2. The agent looks at the country labels first. The prompt names `IT` and `Italy` on purpose, because the bundled data use both.
 
    ```bash
@@ -165,6 +169,7 @@ The other breach sources are `california`, `hhs` and `sec`. The ransomware ↔ d
    *Real output:* `{"ok":true,"mode":"claims","count":79,"data":[{"bucket":"IT","count":76},{"bucket":"Italy","count":1},{"bucket":"Kuwait","count":1},{"bucket":"Switzerland","count":1}]}`
 
    The filter also matched `Kuwait` and `Switzerland`, so the agent keeps only the rows whose label is exactly `IT` or `Italy`.
+
 3. The agent builds the history in two parts, because the bundled data have two different units.
 
    ```bash
@@ -175,6 +180,7 @@ The other breach sources are `california`, `hhs` and `sec`. The ransomware ↔ d
    The helper matches text, so the agent lists the matching claim records, keeps the exact labels `IT` and `Italy`, and groups them by quarter itself. Using only the name gives a very small series: *real output* of `claims --country Italy --group-by quarter` is one claim (`2025-Q4`), because most Italian claims carry the label `IT`.
 
    *Real output of the repository command (shortened):* `{"ok":true,"mode":"repository","count":5,"data":[{"id":"622","date_began":"6/1/2020","year":2020, ...}]}`
+
 4. The agent chooses the set of European country codes, states it, and repeats the steps for each code. Then it adds the live months.
 
    ```bash
@@ -183,6 +189,7 @@ The other breach sources are `california`, `hhs` and `sec`. The ransomware ↔ d
    ```
 
 5. Live records go through `normalize_records.py` and `filter_records.py` (exact country match), as in Example 2.
+
 6. The coverage gate and the status table close the run.
 
 **Expected output:** a line chart with two lines, Europe and Italy, by quarter. Each segment says where it comes from (repository, claims or live sources) and what it counts. The skill does not join segments with different units into one smooth line without saying so. The chart ends with the source-status table.

@@ -5,7 +5,7 @@ description: Unified cyber threat intelligence for ransomware, DDoS, data-breach
 
 **Author: Enrico Frumento**
 
-**Version: v7**
+**Version: v8**
 
 # Purpose
 
@@ -30,7 +30,7 @@ At the start of every request, classify intent as `TRACKER` or `TREND`. Use `scr
 - If a request contains both, choose TREND when aggregation/comparison is the primary deliverable and use Tracker behavior for the record-level subtask.
 - User-explicit mode or source constraints override automatic routing.
 
-Both modes share the same live-source scripts, fallback/replacement rules, status evidence gate, provenance rules, rate-limit behavior, and maximum-effort execution. Do not duplicate or reintroduce legacy GPT Actions.
+Both modes share the same live-source scripts, fallback/replacement rules, status evidence gate, provenance rules, rate-limit behavior, and maximum-effort execution. Use only the supported bundled adapters and host-native web transport.
 
 ## Global runtime-resilience rule
 
@@ -76,7 +76,7 @@ Apply these invariants:
 - preserve original source labels after canonicalization;
 - do not let vendor naming alone redefine operation type.
 
-Use the discussed NoName homonym case and Luna Moth/Silent Ransom Group multi-alias case only as illustrative reasoning examples. Do not hard-code them as production identity rules. Re-derive actor mappings from current evidence and apply the same generic collision/verified-alias logic to any actor.
+Use the NoName homonym case and Luna Moth/Silent Ransom Group multi-alias case documented in `references/actor-identity.md` only as illustrative reasoning examples. Do not hard-code them as production identity rules. Re-derive actor mappings from current evidence and apply the same generic collision/verified-alias logic to any actor.
 
 # Cross-correlation layer
 
@@ -107,7 +107,7 @@ The skill bundles verified historical data under `assets/historical/`:
 
 Use `scripts/historical_query.py` for deterministic local filtering and aggregation. Treat the local datasets as historical evidence with their own coverage boundary, not as automatically current.
 
-For live/current periods, enrich and extend them with the shared live-source engine. Never use the legacy Action definitions from the source KB; they are intentionally excluded from the packaged skill.
+For live/current periods, enrich and extend them with the shared live-source engine and the configured, available transports.
 
 ## Conditional sector enrichment
 
@@ -124,7 +124,7 @@ Read `references/sector-enrichment.md` and use `scripts/sector_enrichment.py` to
 - Preserve the original source record and mark the sector as web-enriched with provenance/confidence.
 - If evidence is ambiguous or conflicting, keep sector unknown.
 
-This web enrichment uses host-native web search/fetch and must not reintroduce legacy GPT Actions.
+This web enrichment uses host-native web search/fetch and the supported bundled helpers.
 
 # Analytical flexibility
 
@@ -447,6 +447,6 @@ When replacement sources materially reconstruct a result, include one concise no
 
 Do not retroactively change the primary source status. Keep the primary failure state supported by current-run evidence and list each replacement source separately with its actual channel and role.
 
-## Legacy Actions are prohibited
+## Supported runtime integrations
 
-Do not invoke or recreate the old GPT Action/OpenAPI integration layer. Use the bundled Python helpers and host-native web/browser/fetch transport defined by this skill. The historical KB data is retained; legacy Action schemas are not part of the runtime.
+Use the bundled Python helpers and the host-native web/browser/fetch transports available to this skill. Do not assume unconfigured external integrations or unavailable tools.

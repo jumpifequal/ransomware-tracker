@@ -14,7 +14,7 @@ Do not enrich sector merely because the field is empty in a response where secto
 
 ## Web workflow
 
-1. Use host-native web search/fetch; do not reintroduce legacy GPT Actions.
+1. Use host-native web search/fetch and the supported bundled helpers.
 2. Search the victim's exact name with available disambiguators such as organization, domain, country, location, or known role.
 3. Prefer first-party and authoritative public sources: official website, employer page, company registry, professional registry, or government source.
 4. Use reputable media or industry directories only when the identity and sector are explicit.

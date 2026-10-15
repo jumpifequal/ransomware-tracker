@@ -119,7 +119,6 @@ Altri prompt, per esempio su DDoS, breach e correlazione: [docs/prompts-and-comm
 - **[Uso avanzato](docs/advanced-use.it.md).** Forzare una modalità o una fonte, interrogare lo storico offline, gestire le fonti bloccate, provare il coverage gate, costruire la tabella di stato, attori e settori.
 - **[Prompt e catalogo dei comandi](docs/prompts-and-commands.md)** (in inglese). Altri prompt e le opzioni di ogni script.
 
-
 ## Che cosa ottieni
 
 Per una vittima corrispondente, la skill restituisce una tabella con **Vendor Name**, **Ransomware Group**, **Date Published** e **Link**. Usa solo campi verificati e scrive `N/A` quando un campo non è noto. Distingue due esiti:
@@ -137,17 +136,17 @@ Per una richiesta di trend, la skill può costruire anche una dashboard. L'immag
 
 La skill include 33 script Python che usano solo la libreria standard di Python. Scopo e uso di ciascuno: [docs/runtime-tools.md](docs/runtime-tools.md) (in inglese).
 
-| Gruppo | Script in `scripts/` |
-|---|---|
-| **Fonti live (rivendicazioni ransomware, gruppi, statistiche)** | `ransomware_live.py`, `ransomlook.py`, `ransomfeed.py`, `ransomfeed_web.py`, `ransomnews.py`, `vulone.py`, `threatvectr.py` |
-| **Fonti OSINT giornalistiche** | `bleepingcomputer.py`, `cybernews.py`, `security_affairs.py` |
-| **Fonti sui data breach** | `breach_sources.py` |
-| **DDoS (DDoSia Monitor)** | `ddosia.py`, `ddosia_search_fallback.py` |
-| **Record, storico e correlazione** | `normalize_records.py`, `filter_records.py`, `historical_query.py`, `actor_identity.py`, `sector_enrichment.py`, `cross_correlation.py` |
-| **Instradamento, copertura e fallback** | `intent_router.py`, `coverage_gate.py`, `fallback_policy.py`, `replacement_policy.py`, `source_status.py`, `request_manifest.py`, `search_index_fallback.py` |
-| **Diagnostica** | `diagnose_source.py`, `network_diagnostics.py` |
-| **Componenti condivisi** | `_cli_common.py`, `_http_common.py`, `_source_runner.py`, `contracts.py` |
-| **Controlli del pacchetto** | `regression.py` |
+| Gruppo                                                          | Script in `scripts/`                                                                                                                                         |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Fonti live (rivendicazioni ransomware, gruppi, statistiche)** | `ransomware_live.py`, `ransomlook.py`, `ransomfeed.py`, `ransomfeed_web.py`, `ransomnews.py`, `vulone.py`, `threatvectr.py`                                  |
+| **Fonti OSINT giornalistiche**                                  | `bleepingcomputer.py`, `cybernews.py`, `security_affairs.py`                                                                                                 |
+| **Fonti sui data breach**                                       | `breach_sources.py`                                                                                                                                          |
+| **DDoS (DDoSia Monitor)**                                       | `ddosia.py`, `ddosia_search_fallback.py`                                                                                                                     |
+| **Record, storico e correlazione**                              | `normalize_records.py`, `filter_records.py`, `historical_query.py`, `actor_identity.py`, `sector_enrichment.py`, `cross_correlation.py`                      |
+| **Instradamento, copertura e fallback**                         | `intent_router.py`, `coverage_gate.py`, `fallback_policy.py`, `replacement_policy.py`, `source_status.py`, `request_manifest.py`, `search_index_fallback.py` |
+| **Diagnostica**                                                 | `diagnose_source.py`, `network_diagnostics.py`                                                                                                               |
+| **Componenti condivisi**                                        | `_cli_common.py`, `_http_common.py`, `_source_runner.py`, `contracts.py`                                                                                     |
+| **Controlli del pacchetto**                                     | `regression.py`                                                                                                                                              |
 
 ## Struttura del repository
 
@@ -183,10 +182,6 @@ La documentazione tecnica in `docs/` e i file di governance restano in inglese, 
 - Rispettare i limiti di richieste e `Retry-After`.
 - Non eseguire codice recuperato da siti esterni.
 - I dati storici locali sono prove storiche con limiti di copertura propri. Non sono automaticamente aggiornati.
-
-## Versione e autore
-
-Versione della skill: **v7**. Autore: **Enrico Frumento**.
 
 ## Dati storici e crediti
 

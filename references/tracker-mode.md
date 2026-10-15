@@ -10,7 +10,7 @@ Use for entity-centric and current-record questions: named victim/company/domain
 4. Keep claim records, confirmed incidents, journalistic confirmations, and aggregate statistics distinct.
 5. Return record-level evidence and the mandatory source-status footer.
 
-Do not invoke legacy GPT Actions or legacy OpenAPI Action schemas. The bundled Python helpers and host-native web transport are the operational replacements.
+Use the bundled Python helpers and host-native web transport. Do not assume any additional integration is configured.
 
 ## Missing sector
 

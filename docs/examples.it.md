@@ -30,14 +30,16 @@ Ogni esempio mostra la richiesta, che cosa fa la skill dietro le quinte, i coman
    ```
 
 3. I record sono normalizzati in un solo schema, filtrati e privati dei duplicati (vedi Esempio 2).
+
 4. Il coverage gate verifica che ogni fonte pertinente sia stata tentata. Se una manca, l'esecuzione continua.
+
 5. L'agente scrive la risposta.
 
 **Output atteso (esempio):**
 
-| Vendor Name | Ransomware Group | Date Published | Link |
-|---|---|---|---|
-| *Example Corp* | *ExampleGroup* | *2026-09-03* | *https://example.invalid/record* |
+| Vendor Name    | Ransomware Group | Date Published | Link                             |
+| -------------- | ---------------- | -------------- | -------------------------------- |
+| *Example Corp* | *ExampleGroup*   | *2026-09-03*   | *https://example.invalid/record* |
 
 La risposta termina con la tabella di stato delle fonti (vedi la dashboard più sotto). Se nessuna fonte corrisponde, la skill scrive **No verified match found**. Se una fonte pertinente era bloccata o non disponibile, scrive invece **Indeterminate / incomplete coverage**.
 
@@ -64,7 +66,7 @@ La risposta termina con la tabella di stato delle fonti (vedi la dashboard più 
    python scripts/threatvectr.py month <YYYY> <M>              # solo controllo di coerenza sugli aggregati
    ```
 
-3. L'agente aggiunge una base storica dai dati inclusi. Nella v7 le rivendicazioni incluse arrivano al 2025, quindi i mesi recenti vengono dalle fonti live.
+3. L'agente aggiunge una base storica dai dati inclusi. Le rivendicazioni incluse arrivano al 2025, quindi i mesi recenti vengono dalle fonti live.
 
    ```bash
    python scripts/historical_query.py claims --group-by year
@@ -83,6 +85,7 @@ La risposta termina con la tabella di stato delle fonti (vedi la dashboard più 
    *Output reale per un record segnaposto (abbreviato):* `{"ok":true,"count":1,"records":[{"victim":"Example Corp","group":"examplegroup","date":"2026-09-03 10:00:00","date_semantics":"discovery_date","country":"IT","data_type":"ransomware-claim-record","provenance":["ransomware.live"], ...}],"filters":{...}}`
 
 5. L'agente raggruppa per mese e paese, tiene separati i conteggi dei tracker quando differiscono e dichiara l'unità che conta (rivendicazioni, non attacchi confermati).
+
 6. Il coverage gate e la tabella di stato chiudono l'esecuzione.
 
 **Output atteso:** una breve sintesi, tabelle e un grafico o una dashboard, se il tuo agente sa disegnarli. L'immagine qui sotto mostra l'impaginazione. **Tutti i numeri sono sintetici.**
@@ -156,6 +159,7 @@ Le altre fonti di breach sono `california`, `hhs` e `sec`. Il profilo ransomware
 **Che cosa succede**
 
 1. Il router sceglie la modalità Trend.
+
 2. L'agente guarda prima le etichette dei paesi. Il prompt cita `IT` e `Italy` apposta, perché i dati inclusi usano entrambe.
 
    ```bash
@@ -165,6 +169,7 @@ Le altre fonti di breach sono `california`, `hhs` e `sec`. Il profilo ransomware
    *Output reale:* `{"ok":true,"mode":"claims","count":79,"data":[{"bucket":"IT","count":76},{"bucket":"Italy","count":1},{"bucket":"Kuwait","count":1},{"bucket":"Switzerland","count":1}]}`
 
    Il filtro ha trovato anche `Kuwait` e `Switzerland`, quindi l'agente tiene solo le righe con etichetta esattamente `IT` o `Italy`.
+
 3. L'agente costruisce lo storico in due parti, perché i dati inclusi hanno due unità diverse.
 
    ```bash
@@ -175,6 +180,7 @@ Le altre fonti di breach sono `california`, `hhs` e `sec`. Il profilo ransomware
    L'helper confronta il testo, quindi l'agente elenca i record di rivendicazioni corrispondenti, tiene le etichette esatte `IT` e `Italy` e le raggruppa da sé per trimestre. Usare solo il nome dà una serie minuscola: l'*output reale* di `claims --country Italy --group-by quarter` è una sola rivendicazione (`2025-Q4`), perché la maggior parte delle rivendicazioni italiane ha l'etichetta `IT`.
 
    *Output reale del comando sull'archivio (abbreviato):* `{"ok":true,"mode":"repository","count":5,"data":[{"id":"622","date_began":"6/1/2020","year":2020, ...}]}`
+
 4. L'agente sceglie l'insieme dei codici paese europei, lo dichiara e ripete i passi per ogni codice. Poi aggiunge i mesi live.
 
    ```bash
@@ -183,6 +189,7 @@ Le altre fonti di breach sono `california`, `hhs` e `sec`. Il profilo ransomware
    ```
 
 5. I record live passano da `normalize_records.py` e `filter_records.py` (corrispondenza esatta del paese), come nell'Esempio 2.
+
 6. Il coverage gate e la tabella di stato chiudono l'esecuzione.
 
 **Output atteso:** un grafico a linee con due linee, Europa e Italia, per trimestre. Ogni tratto indica da dove viene (archivio, rivendicazioni o fonti live) e che cosa conta. La skill non unisce tratti con unità diverse in un'unica linea continua senza dirlo. Il grafico termina con la tabella di stato delle fonti.
