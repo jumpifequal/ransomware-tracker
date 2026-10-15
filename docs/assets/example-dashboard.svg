@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-labelledby="t d">
+<title id="t">Example final dashboard (synthetic data)</title><desc id="d">Illustrative dashboard: claims per month, top countries, top groups, correlation counts and a source-status table. All numbers are synthetic.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#64748B"/></marker></defs>
+<rect width="1200" height="750" fill="#ffffff"/>
+<rect x="0" y="0" width="1200" height="74" fill="#0B1F33"/>
+<text x="30" y="36" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="22" fill="#fff" text-anchor="start" font-weight="bold">Ransomware claims in Europe · last 6 months</text>
+<text x="30" y="60" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#CBD5E1" text-anchor="start" font-weight="normal">Final dashboard built by the skill (example layout)</text>
+<rect x="0" y="74" width="1200" height="30" fill="#F59E0B"/>
+<text x="600" y="94" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1F2937" text-anchor="middle" font-weight="bold">ILLUSTRATIVE EXAMPLE · SYNTHETIC NUMBERS · NOT REAL INCIDENTS</text>
+<rect x="30" y="124" width="270" height="86" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="165" y="162" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="28" fill="#15803D" text-anchor="middle" font-weight="bold">823</text>
+<text x="165" y="184" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#0B1F33" text-anchor="middle" font-weight="bold">claims in 6 months</text>
+<text x="165" y="201" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">unit: leak-site claims</text>
+<rect x="318" y="124" width="270" height="86" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="453" y="162" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="28" fill="#15803D" text-anchor="middle" font-weight="bold">27</text>
+<text x="453" y="184" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#0B1F33" text-anchor="middle" font-weight="bold">countries in the set</text>
+<text x="453" y="201" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">example country set</text>
+<rect x="606" y="124" width="270" height="86" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="741" y="162" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="28" fill="#15803D" text-anchor="middle" font-weight="bold">46</text>
+<text x="741" y="184" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#0B1F33" text-anchor="middle" font-weight="bold">active groups</text>
+<text x="741" y="201" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">labels as in sources</text>
+<rect x="894" y="124" width="270" height="86" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="1029" y="162" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="28" fill="#15803D" text-anchor="middle" font-weight="bold">10 / 10</text>
+<text x="1029" y="184" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#0B1F33" text-anchor="middle" font-weight="bold">sources attempted</text>
+<text x="1029" y="201" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">coverage gate: ok</text>
+<text x="30" y="242" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="15" fill="#0B1F33" text-anchor="start" font-weight="bold">Claims per month</text>
+<text x="30" y="260" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="start" font-weight="normal">claim publication date</text>
+<line x1="30" y1="420" x2="400" y2="420" stroke="#CBD5E1"/>
+<rect x="48" y="324.1" width="40" height="95.9" rx="8" fill="#22C55E"/>
+<text x="68" y="318.125" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">118</text>
+<text x="68" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M-5</text>
+<rect x="106" y="313.6" width="40" height="106.4" rx="8" fill="#22C55E"/>
+<text x="126" y="307.5625" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">131</text>
+<text x="126" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M-4</text>
+<rect x="164" y="316.8" width="40" height="103.2" rx="8" fill="#22C55E"/>
+<text x="184" y="310.8125" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">127</text>
+<text x="184" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M-3</text>
+<rect x="222" y="298.9" width="40" height="121.1" rx="8" fill="#22C55E"/>
+<text x="242" y="292.9375" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">149</text>
+<text x="242" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M-2</text>
+<rect x="280" y="304.6" width="40" height="115.4" rx="8" fill="#22C55E"/>
+<text x="300" y="298.625" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">142</text>
+<text x="300" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M-1</text>
+<rect x="338" y="293.2" width="40" height="126.8" rx="8" fill="#22C55E"/>
+<text x="358" y="287.25" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">156</text>
+<text x="358" y="436" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">M</text>
+<text x="440" y="242" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="15" fill="#0B1F33" text-anchor="start" font-weight="bold">Top countries</text>
+<text x="440" y="260" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="start" font-weight="normal">country code as returned by sources</text>
+<text x="440" y="290" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">DE</text>
+<rect x="475" y="276" width="218" height="18" rx="9" fill="#16385C"/>
+<text x="700.6" y="290" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">64</text>
+<text x="440" y="314" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">IT</text>
+<rect x="475" y="300" width="197" height="18" rx="9" fill="#16385C"/>
+<text x="680.2" y="314" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">58</text>
+<text x="440" y="338" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">FR</text>
+<rect x="475" y="324" width="173" height="18" rx="9" fill="#16385C"/>
+<text x="656.4" y="338" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">51</text>
+<text x="440" y="362" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">ES</text>
+<rect x="475" y="348" width="150" height="18" rx="9" fill="#16385C"/>
+<text x="632.6" y="362" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">44</text>
+<text x="440" y="386" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">GB</text>
+<rect x="475" y="372" width="139" height="18" rx="9" fill="#16385C"/>
+<text x="622.4" y="386" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">41</text>
+<text x="440" y="410" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">NL</text>
+<rect x="475" y="396" width="99" height="18" rx="9" fill="#16385C"/>
+<text x="581.6" y="410" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">29</text>
+<text x="800" y="242" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="15" fill="#0B1F33" text-anchor="start" font-weight="bold">Most active groups</text>
+<text x="800" y="260" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="start" font-weight="normal">labels kept as in the sources</text>
+<text x="800" y="290" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">Group A</text>
+<rect x="868" y="276" width="250" height="18" rx="9" fill="#15803D"/>
+<text x="1125.6" y="290" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">96</text>
+<text x="800" y="314" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">Group B</text>
+<rect x="868" y="300" width="218" height="18" rx="9" fill="#15803D"/>
+<text x="1094.4" y="314" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">84</text>
+<text x="800" y="338" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">Group C</text>
+<rect x="868" y="324" width="185" height="18" rx="9" fill="#15803D"/>
+<text x="1060.6" y="338" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">71</text>
+<text x="800" y="362" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">Group D</text>
+<rect x="868" y="348" width="172" height="18" rx="9" fill="#15803D"/>
+<text x="1047.6" y="362" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">66</text>
+<text x="800" y="386" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">Group E</text>
+<rect x="868" y="372" width="135" height="18" rx="9" fill="#15803D"/>
+<text x="1011.2" y="386" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="start" font-weight="normal">52</text>
+<rect x="30" y="448" width="560" height="150" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="46" y="474" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" fill="#0B1F33" text-anchor="start" font-weight="bold">Cross-threat correlation · ransomware ↔ DDoS · ±14 days</text>
+<rect x="46" y="490" width="166" height="56" rx="10" fill="#fff" stroke="#15803D" stroke-width="2"/>
+<text x="129" y="516" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="22" fill="#15803D" text-anchor="middle" font-weight="bold">7</text>
+<text x="129" y="536" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">DIRECT</text>
+<rect x="224" y="490" width="166" height="56" rx="10" fill="#fff" stroke="#F59E0B" stroke-width="2"/>
+<text x="307" y="516" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="22" fill="#F59E0B" text-anchor="middle" font-weight="bold">12</text>
+<text x="307" y="536" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">CONTEXTUAL</text>
+<rect x="402" y="490" width="166" height="56" rx="10" fill="#fff" stroke="#64748B" stroke-width="2"/>
+<text x="485" y="516" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="22" fill="#64748B" text-anchor="middle" font-weight="bold">31</text>
+<text x="485" y="536" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0B1F33" text-anchor="middle" font-weight="bold">REJECTED</text>
+<text x="46" y="572" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Causality claimed: no. Co-occurrence in time is not proof of cause.</text>
+<text x="46" y="589" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Only DIRECT matches count in strict incident-level totals.</text>
+<rect x="620" y="448" width="550" height="262" rx="12" fill="#fff" stroke="#CBD5E1"/>
+<text x="636" y="474" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" fill="#0B1F33" text-anchor="start" font-weight="bold">Source status (current run)</text>
+<circle cx="644" cy="490" r="6" fill="#22C55E"/>
+<text x="660" y="494" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">ransomware.live</text>
+<text x="860" y="494" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="494" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">API</text>
+<circle cx="644" cy="510" r="6" fill="#22C55E"/>
+<text x="660" y="514" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Ransomfeed</text>
+<text x="860" y="514" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="514" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">API</text>
+<circle cx="644" cy="530" r="6" fill="#22C55E"/>
+<text x="660" y="534" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Ransomfeed Web/RQL</text>
+<text x="860" y="534" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="534" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<circle cx="644" cy="550" r="6" fill="#22C55E"/>
+<text x="660" y="554" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">RansomLook</text>
+<text x="860" y="554" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="554" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">API</text>
+<circle cx="644" cy="570" r="6" fill="#22C55E"/>
+<text x="660" y="574" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Ransomnews</text>
+<text x="860" y="574" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="574" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<circle cx="644" cy="590" r="6" fill="#22C55E"/>
+<text x="660" y="594" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">VULONE</text>
+<text x="860" y="594" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="594" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<circle cx="644" cy="610" r="6" fill="#22C55E"/>
+<text x="660" y="614" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">ThreatVectr</text>
+<text x="860" y="614" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="614" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<circle cx="644" cy="630" r="6" fill="#22C55E"/>
+<text x="660" y="634" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">BleepingComputer</text>
+<text x="860" y="634" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="634" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<circle cx="644" cy="650" r="6" fill="#F59E0B"/>
+<text x="660" y="654" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Cybernews</text>
+<text x="860" y="654" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">BLOCKED</text>
+<text x="950" y="654" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web · HTTP 403</text>
+<circle cx="644" cy="670" r="6" fill="#22C55E"/>
+<text x="660" y="674" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="normal">Security Affairs</text>
+<text x="860" y="674" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#0B1F33" text-anchor="start" font-weight="bold">OK</text>
+<text x="950" y="674" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="12" fill="#64748B" text-anchor="start" font-weight="normal">Web</text>
+<rect x="30" y="618" width="560" height="92" rx="12" fill="#F1F5F9" stroke="#CBD5E1"/>
+<text x="46" y="642" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14" fill="#0B1F33" text-anchor="start" font-weight="bold">How to read this</text>
+<text x="46" y="664" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748B" text-anchor="start" font-weight="normal">Bars count claims published on leak sites. They are not confirmed attacks.</text>
+<text x="46" y="681" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748B" text-anchor="start" font-weight="normal">Bundled history is a baseline. Recent months come from live sources.</text>
+<text x="46" y="698" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748B" text-anchor="start" font-weight="normal">A blocked source is shown as blocked. It is never turned into “no match”.</text>
+<text x="600" y="735" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="normal">Layout only: all numbers, country values and group labels above are synthetic placeholders.</text>
+</svg>

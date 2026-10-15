@@ -1,0 +1,9 @@
+interface:
+  display_name: "Ransomware Intelligence"
+  short_description: "Track ransomware, DDoS, data breaches, trends, and cross-threat correlations."
+  icon_small: "./assets/icon.jpg"
+  icon_large: "./assets/icon.jpg"
+  default_prompt: "Use $ransomware-tracker to route this ransomware, DDoS, breach, or cross-threat request and apply the relevant maximum-effort source scope."
+  brand_color: "#22C55E"
+policy:
+  allow_implicit_invocation: true

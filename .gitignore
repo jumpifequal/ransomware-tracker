@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# Environments
+.venv/
+venv/
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+# Local conversion workspaces
+workspace/
+*.bat

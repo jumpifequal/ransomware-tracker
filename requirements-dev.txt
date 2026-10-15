@@ -1,0 +1,2 @@
+# Needed only by tools/validate_repo.py. The skill scripts use the standard library only.
+PyYAML>=6.0
